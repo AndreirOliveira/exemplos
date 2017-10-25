@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulário</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<style>
+		input[type="text"] {background-color:#fff; color:#000}
+		input:invalid{background-color: yellow; color: red}
+	</style>
+</head>
+<body>
+
+	<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Cadastro</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtnome">Nome</label>  
+  <div class="col-md-4">
+  <input id="txtnome" name="txtnome" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcidade">Cidade</label>  
+  <div class="col-md-4">
+  <input id="txtcidade" name="txtcidade" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtestado">Estado</label>  
+  <div class="col-md-4">
+  <input id="txtestado" name="txtestado" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcpf">CPF</label>  
+  <div class="col-md-4">
+  <input id="txtcpf" name="txtcpf" type="text" placeholder="" class="form-control input-md" required=""
+  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="digite o CPF com todos os dígitos"> 
+    <span class="help-block">Dígitos 000.000.000-00</span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcep">CEP</label>  
+  <div class="col-md-4">
+  <input id="txtcep" name="txtcep" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtdata">Data de Nascimento </label>  
+  <div class="col-md-4">
+  <input id="txtdata" name="txtdata" type="date" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtidade">Idade</label>  
+  <div class="col-md-4">
+  <input id="txtidade" name="txtidade" type="number" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtemail">E-mail</label>  
+  <div class="col-md-4">
+  <input id="txtemail" name="txtemail" type="email" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtarea">Text Area</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="txtarea" name="txtarea"></textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rdosexo">Sexo</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="rdosexo-0">
+      <input type="radio" name="rdosexo" id="rdosexo-0" value="M" checked="checked">
+      Masculino
+    </label>
+	</div>
+  <div class="radio">
+    <label for="rdosexo-1">
+      <input type="radio" name="rdosexo" id="rdosexo-1" value="F">
+      Feminino
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pswsenha">Senha</label>
+  <div class="col-md-4">
+    <input id="pswsenha" name="pswsenha" type="password" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="sltcivil">Estado Civil</label>
+  <div class="col-md-4">
+    <select id="sltcivil" name="sltcivil" class="form-control">
+      <option value="S">Solteiro</option>
+      <option value="C">Casado</option>
+      <option value="D">Divorciado</option>
+      <option value="V">Viúvo</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcel">Celular</label>  
+  <div class="col-md-4">
+  <input id="txtcel" name="txtcel" type="tel" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnenviar"></label>
+  <div class="col-md-4">
+    <button id="btnenviar" name="btnenviar" class="btn btn-primary">Enviar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+	
+</body>
+</html>
